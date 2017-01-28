@@ -1,5 +1,50 @@
 # Solar System 
-<h2>There were  using  <i><b>Indexer methods</b></i> and <i><b>Exception handlings</b></i> </h2>
+<h2>There were  using  <i><b>Indexer methods</b></i>,  <i><b>Exception handlings</b></i> and <i><b>Extension Methods.</b></i></h2>
+```C#
+namespace Solar_System
+{
+    class SolarSystem
+    {
+        string[] planets = { "The Sun", "Mercury", "Venus", "Earth",
+            "Mars", "Jupiter", "Saturn","Uranus", "Neptune", "Pluto" };
+        private int GetPlanet(string testPlanet)
+        {
+            for (int j = 0; j < planets.Length; j++)
+            {
+                if (planets[j] == testPlanet)
+                {
+                    return j;
+                }
+            }
+            throw new ArgumentOutOfRangeException
+                (testPlanet, "testPlanet must be correct name of the planet");
+        }
+        public int this[string planet]
+        {
+            get
+            {
+                return GetPlanet(planet);
+            }
+        }
+    }
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            SolarSystem plan = new SolarSystem();
+            Console.WriteLine("Please enter name of planet to know its number from the set \"The Sun, Mercury, Venus, Earth,Mars, Jupiter, Saturn, Uranus, Neptune, Pluto\" ");
+            string st =Console.ReadLine();
+            st = st.UppercaseFirstLetter();
+            Console.WriteLine(plan[st]);
+
+            //Console.WriteLine(plan["Marsss"]);
+
+            Console.WriteLine("Press any key to exit.");
+            Console.ReadKey();
+        }
+    }
+}
+```
 ![solar-system](https://cloud.githubusercontent.com/assets/20840005/22181403/0fe123d2-e0a5-11e6-8e16-444ea69f484b.jpg)
 
 <h3> When we are entering the correct name of the planet, the program is returning its <i><b>number</b></i> of Galaxy.<br>
