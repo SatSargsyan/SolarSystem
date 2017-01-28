@@ -36,7 +36,8 @@ namespace Solar_System
         {
             SolarSystem plan = new SolarSystem();
             Console.WriteLine("Please enter name of planet to know its number from the set \"The Sun, Mercury, Venus, Earth,Mars, Jupiter, Saturn, Uranus, Neptune, Pluto\" ");
-            string st = Console.ReadLine();
+            string st =Console.ReadLine();
+            st = st.UppercaseFirstLetter();
             Console.WriteLine(plan[st]);
 
             //Console.WriteLine(plan["Marsss"]);
