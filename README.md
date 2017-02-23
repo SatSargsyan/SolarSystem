@@ -1,5 +1,35 @@
 # Solar System 
-<h2>There were  using  <i><b>Indexer methods</b></i>,  <i><b>Exception handlings</b></i> and <i><b>Extension Methods.</b></i></h2>
+
+###Declaration of an indexer is to some extent similar to a property. The difference is that indexer accessors require an index. 
+####Like a property, you use get and set accessors for defining an indexer. However, where properties return or set a specific data member, indexers return or set a particular value from the object instance. 
+####Indexers are defined with the<b> this</b> keyword.
+####For example:
+```C#
+class Clients {
+  private string[] names = new string[10];
+
+  public string this[int index] {
+    get {
+      return names[index];
+    }
+    set {
+      names[index] = value;
+    }
+  }
+}
+```
+####The <b>indexer</b> definition includes the <b>this keyword and an index</b>, which is used to get and set the appropriate value.
+####Now, when we declare an object of class Clients, we use an index to refer to specific objects like the elements of an array:
+```C#
+Clients c = new Clients();
+c[0] = "Dave";
+c[1] = "Bob";
+
+Console.WriteLine(c[1]);
+//Outputs "Bob"  
+```
+
+<h2>In the program were  using  <i><b>Indexer methods</b></i>,  <i><b>Exception handlings</b></i> and <i><b>Extension Methods.</b></i></h2>
 ```C#
 namespace Solar_System
 {
