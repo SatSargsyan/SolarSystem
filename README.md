@@ -1,9 +1,9 @@
 # Solar System 
 
-###Declaration of an indexer is to some extent similar to a property. The difference is that indexer accessors require an index. 
-####Like a property, you use get and set accessors for defining an indexer. However, where properties return or set a specific data member, indexers return or set a particular value from the object instance. 
-####Indexers are defined with the<b> this</b> keyword.
-####For example:
+### Declaration of an indexer is to some extent similar to a property. The difference is that indexer accessors require an index. 
+#### Like a property, you use get and set accessors for defining an indexer. However, where properties return or set a specific data member, indexers return or set a particular value from the object instance. 
+#### ndexers are defined with the<b> this</b> keyword.
+#### For example:
 ```C#
 class Clients {
   private string[] names = new string[10];
@@ -18,8 +18,8 @@ class Clients {
   }
 }
 ```
-####The <b>indexer</b> definition includes the <b>this keyword and an index</b>, which is used to get and set the appropriate value.
-####Now, when we declare an object of class Clients, we use an index to refer to specific objects like the elements of an array:
+#### The <b>indexer</b> definition includes the <b>this keyword and an index</b>, which is used to get and set the appropriate value.
+#### Now, when we declare an object of class Clients, we use an index to refer to specific objects like the elements of an array:
 ```C#
 Clients c = new Clients();
 c[0] = "Dave";
