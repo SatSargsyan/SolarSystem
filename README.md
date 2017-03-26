@@ -29,7 +29,7 @@ Console.WriteLine(c[1]);
 //Outputs "Bob"  
 ```
 
-<h2>In the program were  using  <i><b>Indexer methods</b></i>,  <i><b>Exception handlings</b></i> and <i><b>Extension Methods.</b></i></h2>
+## In this program are using  <i><b>Indexer methods</b></i>,  <i><b>Exception handlings</b></i> and <i><b>Extension Methods.</b></i>
 ```C#
 namespace Solar_System
 {
@@ -77,7 +77,7 @@ namespace Solar_System
 ```
 ![solar-system](https://cloud.githubusercontent.com/assets/20840005/22181403/0fe123d2-e0a5-11e6-8e16-444ea69f484b.jpg)
 
-<h3> When we are entering the correct name of the planet, the program is returning its <i><b>number</b></i> of Galaxy.<br>
+### When we are entering the correct name of the planet, the program is returning its <i><b>number</b></i> of Galaxy.<br>
 And if the name of the planet is in the incorrect form, there is happening <i><b>exception</b></i>.<br>
 For example <i><b>Marssss</b></i>.</h3>
 
